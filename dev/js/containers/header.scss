@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	justify-content: center;
+
+	 font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-item {
+	margin: 5px;
+}
+
+.cart {
+	align-self: flex-end;
+}
