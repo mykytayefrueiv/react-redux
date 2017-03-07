@@ -1,0 +1,15 @@
+.cart-list-element {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+        
+    img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.cart-list {
+    display: flex;
+    flex-flow: column;
+}
