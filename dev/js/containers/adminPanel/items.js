@@ -67,7 +67,7 @@ class Items extends Component {
                     })}
                     <div>
                         <div className="item-container">
-                            <Link to={`/panel/item/new`}>
+                            <Link to={`/panel/items/new`}>
                                 <div className="item-upper-part" onClick={() => this.props.selectItem({})}>
                                     <span className="title">NEW ITEM</span>
                                     <i className="material-icons add">add</i>

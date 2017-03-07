@@ -10,8 +10,11 @@ function removeCategory(categoryIndex) {
 function selectItem(item) {
     return {type: 'SELECT_ITEM', payload: item};
 };
-function updateItem(itemToId) {
-    return {type: 'UPDATE_ITEM', payload: itemToId};
+function createUpdateItem(itemToId) {
+    return {type: 'UPDATE_ITEM', payload: itemToId };
+}
+function removeItemSelection() {
+    return { type: 'REMOVE_ITEM_SELECTION' };
 }
 
-export {addToCart, addCategory, removeCategory,selectItem, updateItem};
+export {addToCart, addCategory, removeCategory,selectItem, createUpdateItem, removeItemSelection};

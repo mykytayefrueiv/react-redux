@@ -9,6 +9,9 @@ export default function (state = {}, action) {
                 ...action.payload
             };
         };
+        case 'REMOVE_ITEM_SELECTION': {
+            return {};
+        }
     }
     return state;
 }

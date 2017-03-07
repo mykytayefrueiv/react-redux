@@ -35,10 +35,8 @@ class AdminPanel extends Component {
                 </div>
                 <Route exact path={`/panel/categories`} component={Categories}/>
                 <Route exact path={`/panel/items`} component={Items}/>
-                <Switch>
-                    <Route path={`/panel/items/edit/:id`} component={Item}/>
-                    <Route path={`/panel/items/new`} component={Item}/>
-                </Switch>
+                <Route path={`/panel/items/edit/:id`} component={Item}/>
+                <Route exact path={`/panel/items/new`} component={Item}/>
             </div>
         );
     }

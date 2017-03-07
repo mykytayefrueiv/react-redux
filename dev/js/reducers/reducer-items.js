@@ -27,12 +27,17 @@ export default function (state = defaultState, action) {
     switch (action.type) {
         case 'UPDATE_ITEM':
             {
+                debugger;
+                if(!action.payload.id) {
+                    return [
+                        ...state, 
+                        { ...action.payload.item, 
+                            id: state.length + 1 
+                        }];
+                }
                 return _.map(state, (item) => {
                     return item.id === action.payload.id
-                        ? {
-                            ...item,
-                            ...action.payload.item
-                        }
+                        ? _.assign({}, item, action.payload.item)
                         : item;
                 });
             }
