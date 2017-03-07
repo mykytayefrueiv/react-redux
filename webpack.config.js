@@ -8,7 +8,7 @@ module.exports = {
         port: 3001,
         historyApiFallback: true
     },
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'eval-source-map',
     entry: './dev/js/index.js',
     module: {
         loaders: [

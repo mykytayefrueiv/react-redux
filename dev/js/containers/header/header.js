@@ -24,9 +24,11 @@ class Header extends Component {
                     <Link to="/panel">ADMIN PANEL</Link>
                 </div>
                 <div className="cart">
-                    <img
-                        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_shopping_cart_black_24px.svg"></img>
-                    <span>{this.getCartCount(this.props.cart)}</span>
+                    <Link to="/cart">
+                        <img
+                            src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_shopping_cart_black_24px.svg"></img>
+                        <span>{this.getCartCount(this.props.cart)}</span>
+                    </Link>
                 </div>
             </div>
         );
