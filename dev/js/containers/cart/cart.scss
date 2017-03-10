@@ -1,15 +1,50 @@
-.cart-list-element {
+.cart {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: baseline;
-        
-    img {
-        height: 150px;
+    flex-flow: column;
+    .middle-container {
+        display: flex;
+        flex-flow: column;
+        width: 66.6%;
+        align-self: center;
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    }
+    button {
+        background-color: #689F38;
+        color: white;
+        margin: 5px 5px 0 0;
+        padding: 7px;
+        border: none;
+        border-radius: 3px;
         width: 150px;
+        align-self: flex-end;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
-.cart-list {
-    display: flex;
-    flex-flow: column;
+th,
+td {
+    border-bottom: 1px solid #cecfd5;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+thead {
+    background-color: #9CCC65;
+}
+
+tbody tr:nth-child(even) {
+    background: #F1F8E9;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
 }

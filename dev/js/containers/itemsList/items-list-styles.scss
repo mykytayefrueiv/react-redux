@@ -6,8 +6,10 @@
     font-family: 'Roboto', sans-serif;
     .item-image {
         height: 195px;
-        width: 290px;
-        margin: 5px;
+        margin: 5px 0 5px 0;
+        padding-bottom: 5px;
+        width: 100%;
+        border-bottom: 1px solid lightgray;
     }
 }
 
@@ -40,11 +42,9 @@
 }
 
 .action-button {
-    outline: none;
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     height: 15%;
-    padding-top: 16px;
-    text-align: center;
     background-color: transparentize(green, 0.50);
 }
