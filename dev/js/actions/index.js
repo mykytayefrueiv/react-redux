@@ -1,6 +1,9 @@
 function addToCart(item) {
     return {type: 'ADD_TO_CART', payload: item}
 };
+function checkoutCart() {
+    return {type: 'CHECKOUT_CART'};
+};
 function addCategory(categoryName) {
     return {type: 'ADD_CATEGORY', payload: categoryName}
 }
@@ -12,9 +15,9 @@ function selectItem(item) {
 };
 function createUpdateItem(itemToId) {
     return {type: 'UPDATE_ITEM', payload: itemToId };
-}
+};
 function removeItemSelection() {
     return { type: 'REMOVE_ITEM_SELECTION' };
-}
+};
 
-export {addToCart, addCategory, removeCategory,selectItem, createUpdateItem, removeItemSelection};
+export {addToCart, addCategory, removeCategory,selectItem, createUpdateItem, removeItemSelection, checkoutCart};

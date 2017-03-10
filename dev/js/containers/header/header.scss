@@ -1,15 +1,14 @@
 .header {
-	display: flex;
-	justify-content: center;
-
-	 font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }
 
-.menu-item {
-	margin: 5px;
+.cart-icon {
+    align-self: flex-end;
 }
 
-.cart {
-	align-self: flex-end;
+.menu-item {
+    margin: 5px;
 }
